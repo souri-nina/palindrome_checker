@@ -3,9 +3,6 @@
 # loop until user quit
 
 
-@reverse_array = []
-
-
 
   def main
     print `clear`
@@ -19,25 +16,20 @@
         puts 'Please enter a valid character.'
       else
         exit if @user_input == 'quit'  
-       input_check 
+       reverse
   end
 
-  when input_check
-    @user_input 
-    puts 'CHECKING'
-    if user_input.lenth > 0
-      @reverse_array << user_input
-    end
-  end
+   def reverse
+    reverse = [] 
+       i = -1
+     @user_input.each do |letter, i |
+      puts “{i} => {letter}”            
+     if @user_input = reverse
+      puts 'Palindromania!'
+     else 
+      puts 'No Palindrome.'
+      end 
+   end
 
-  def reverse
-    i = -1
-    @input_array.each do
-      reverse_array << @input_array[i]
-      i-=1
-    end
-    if 
-  end
-end
-
+   
 main
